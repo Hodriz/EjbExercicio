@@ -16,9 +16,9 @@ public class EjbJogador {
 
     // Add business logic below. (Right-click in editor and choose
     // "Insert Code > Add Business Method")
-       ArrayList<Jogador>listaJogador=new ArrayList<>();
-            
-    Jogador player=new Jogador();
+    ArrayList<Jogador> listaJogador = new ArrayList<>();
+
+    Jogador player = new Jogador();
 
     public Jogador getPlayer() {
         return player;
@@ -27,15 +27,15 @@ public class EjbJogador {
     public void setPlayerNome(Jogador player) {
         this.player = player;
     }
-    
-    public void addPlayer(){
-     listaJogador.add(player);
+
+    public void addPlayer() {
+        listaJogador.add(player);
     }
-    
-    public void showPlayerList(){
-     for(int i=0;i<listaJogador.size();i++){
-         System.out.println(i);
-     }
+
+    public void showPlayerList() {
+        for (int i = 0; i < listaJogador.size(); i++) {
+            System.out.println(i);
+        }
     }
-   
+
 }

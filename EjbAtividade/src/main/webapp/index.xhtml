@@ -7,7 +7,10 @@
     </h:head>
     <h:body>
         <h:form>
-            <h:dataTable value="jsfJogador.">
+            <h:dataTable value="#{jsfJogador.listarJogador}" var="jogadores">
+                <h:column>
+                    <h:outputText value="#{jogadores.nome}"/>
+                </h:column>
                 
             </h:dataTable>
         </h:form>

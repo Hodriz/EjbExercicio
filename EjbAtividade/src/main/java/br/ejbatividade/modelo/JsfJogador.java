@@ -29,8 +29,9 @@ public class JsfJogador implements Serializable {
     
     
     
-      public ArrayList<Jogador>listarJogador(){
-    return ejbJogador.listaJogador;
+      public String listarJogador(){
+       ejbJogador.showPlayerList();
+        return null;
     }
     
     
