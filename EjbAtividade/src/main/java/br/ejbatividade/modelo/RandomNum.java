@@ -4,14 +4,19 @@
  */
 package br.ejbatividade.modelo;
 
+import java.util.Random;
+
 /**
  *
  * @author Rodrigo
  */
 public class RandomNum {
     
-    int randomNumA;
-    int randomNumB;
+    Random gerador = new Random();
+
+    private int randomNumA;
+    private int randomNumB;
+    
 
     public RandomNum() {
     }
@@ -27,7 +32,7 @@ public class RandomNum {
     }
 
     public void setRandomNumA(int randomNumA) {
-        this.randomNumA = randomNumA;
+        this.randomNumA = gerador.nextInt(5000);
     }
 
     public int getRandomNumB() {
@@ -35,7 +40,7 @@ public class RandomNum {
     }
 
     public void setRandomNumB(int randomNumB) {
-        this.randomNumB = randomNumB;
+        this.randomNumB = gerador.nextInt(5000);
     }
     
     
