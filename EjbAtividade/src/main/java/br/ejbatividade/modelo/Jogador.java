@@ -4,6 +4,7 @@
  */
 package br.ejbatividade.modelo;
 
+
 /**
  *
  * @author Rodrigo
@@ -46,7 +47,7 @@ public class Jogador {
     public void setPontos(int pontos) {
         this.pontos = pontos;
     }
-    
+
     
     
 }

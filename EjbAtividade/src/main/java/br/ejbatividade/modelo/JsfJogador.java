@@ -8,6 +8,7 @@ import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 import javax.ejb.EJB;
 
 /**
@@ -20,19 +21,32 @@ public class JsfJogador implements Serializable {
 
     @EJB
     private EjbJogador ejbJogador;
+    
+    private Jogador jogador;
 
     /**
      * Creates a new instance of JsfJogador
      */
     public JsfJogador() {
     }
-    
-    
-    
-      public String listarJogador(){
-       ejbJogador.showPlayerList();
-        return null;
+
+    public EjbJogador getEjbJogador() {
+        return ejbJogador;
     }
+
+    public void setEjbJogador(EjbJogador ejbJogador) {
+        this.ejbJogador = ejbJogador;
+    }
+
+    public Jogador getJogador() {
+        return jogador;
+    }
+
+    public void setJogador(Jogador jogador) {
+        this.jogador = jogador;
+    }
+    
+    
     
     
     

@@ -32,10 +32,8 @@ public class EjbJogador {
         listaJogador.add(player);
     }
 
-    public void showPlayerList() {
-        for (int i = 0; i < listaJogador.size(); i++) {
-            System.out.println(i);
-        }
+    public ArrayList<Jogador>  showPlayerList() {
+        return listaJogador;
     }
 
 }

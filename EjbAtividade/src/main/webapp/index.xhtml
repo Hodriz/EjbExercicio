@@ -7,12 +7,21 @@
     </h:head>
     <h:body>
         <h:form>
-            <h:dataTable value="#{jsfJogador.listarJogador}" var="jogadores">
+          
+            
+            <h:inputText value="#{jsfJogador.ejbJogador.player.nome}"/><br></br>
+            <h:outputText value="#{jsfJogador.ejbJogador.player.nome}"/><br></br>
+            <h:inputText value="#{jsfJogador.ejbJogador.player.palpite}"/><br></br>
+            <h:outputText value="#{jsfJogador.ejbJogador.player.palpite}"/><br></br>
+            <h:commandButton action="#{jsfJogador.ejbJogador.addPlayer()}" value="add"/><br></br>
+            <h:dataTable value="#{jsfJogador.ejbJogador.player}" var="jogador">
                 <h:column>
-                    <h:outputText value="#{jogadores.nome}"/>
+                    <h:outputText value="#{jogador.nome}"></h:outputText>
                 </h:column>
-                
             </h:dataTable>
+             
+                
+         
         </h:form>
     </h:body>
 </html>
