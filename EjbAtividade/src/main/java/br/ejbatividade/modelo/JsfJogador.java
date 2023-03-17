@@ -22,8 +22,6 @@ public class JsfJogador implements Serializable {
     @EJB
     private EjbJogador ejbJogador;
     
-    private RandomNum randomNum;    
-    
     private Jogador jogador;
 
     /**
@@ -46,14 +44,6 @@ public class JsfJogador implements Serializable {
 
     public void setJogador(Jogador jogador) {
         this.jogador = jogador;
-    }
-
-    public RandomNum getRandomNum() {
-        return randomNum;
-    }
-
-    public void setRandomNum(RandomNum randomNum) {
-        this.randomNum = randomNum;
     }
 
   

@@ -11,7 +11,7 @@ import javax.ejb.Stateless;
  *
  * @author Rodrigo
  */
-@Stateless
+
 public class RandomNum {
     
     Random gerador = new Random();
@@ -22,6 +22,15 @@ public class RandomNum {
 
     public RandomNum() {
     }
+
+    public Random getGerador() {
+        return gerador;
+    }
+
+    public void setGerador(Random gerador) {
+        this.gerador = gerador;
+    }
+    
 
     public RandomNum(int randomNumA, int randomNumB) {
         this.randomNumA = randomNumA;

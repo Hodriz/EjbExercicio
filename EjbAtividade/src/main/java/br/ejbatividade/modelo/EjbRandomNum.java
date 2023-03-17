@@ -5,6 +5,7 @@
 package br.ejbatividade.modelo;
 
 import java.util.Random;
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
 
 
@@ -15,17 +16,18 @@ import javax.ejb.Stateless;
 @Stateless
 public class EjbRandomNum {
 
-    // Add business logic below. (Right-click in editor and choose
-    // "Insert Code > Add Business Method")
-    RandomNum rdn=new RandomNum();
+    @EJB
+    private RandomNum randomNum;
 
-    int num1(){
-    return rdn.getRandomNumA();
+    public RandomNum getRandomNum() {
+        return randomNum;
     }
-    
-    int num2(){
-    return rdn.getRandomNumB();
+
+    public void setRandomNum(RandomNum randomNum) {
+        this.randomNum = randomNum;
     }
+     
     
+
     
 }
