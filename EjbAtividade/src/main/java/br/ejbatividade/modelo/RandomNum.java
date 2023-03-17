@@ -11,7 +11,7 @@ import javax.ejb.Stateless;
  *
  * @author Rodrigo
  */
-
+@Stateless
 public class RandomNum {
     
     Random gerador = new Random();

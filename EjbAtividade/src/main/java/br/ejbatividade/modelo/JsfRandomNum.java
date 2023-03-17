@@ -17,21 +17,18 @@ import javax.enterprise.context.RequestScoped;
 public class JsfRandomNum {
 
     @EJB
-    private EjbRandomNum ejbRandomNum;
+    private RandomNum randomNum;
 
-    /**
-     * Creates a new instance of JsfRandomNum
-     */
-    public JsfRandomNum() {
+    public RandomNum getRandomNum() {
+        return randomNum;
     }
 
-    public EjbRandomNum getEjbRandomNum() {
-        return ejbRandomNum;
-    }
-
-    public void setEjbRandomNum(EjbRandomNum ejbRandomNum) {
-        this.ejbRandomNum = ejbRandomNum;
+    public void setRandomNum(RandomNum randomNum) {
+        this.randomNum = randomNum;
     }
     
+    
+
+
     
 }
