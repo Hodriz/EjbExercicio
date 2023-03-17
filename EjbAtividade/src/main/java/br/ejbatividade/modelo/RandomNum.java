@@ -5,17 +5,19 @@
 package br.ejbatividade.modelo;
 
 import java.util.Random;
+import javax.ejb.Stateless;
 
 /**
  *
  * @author Rodrigo
  */
+@Stateless
 public class RandomNum {
     
     Random gerador = new Random();
 
-    private int randomNumA;
-    private int randomNumB;
+    private int randomNumA=gerador.nextInt(5000);
+    private int randomNumB=gerador.nextInt(5000);
     
 
     public RandomNum() {

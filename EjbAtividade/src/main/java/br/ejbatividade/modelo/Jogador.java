@@ -48,6 +48,11 @@ public class Jogador {
         this.pontos = pontos;
     }
 
+    @Override
+    public String toString() {
+        return "Jogador{" + "nome=" + nome + ", palpite=" + palpite + ", pontos=" + pontos + '}';
+    }
+
     
     
 }

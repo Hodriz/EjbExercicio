@@ -32,8 +32,11 @@ public class EjbJogador {
         listaJogador.add(player);
     }
 
-    public ArrayList<Jogador>  showPlayerList() {
-        return listaJogador;
+
+    public void setListaJogador(ArrayList<Jogador> listaJogador) {
+        this.listaJogador = listaJogador;
     }
+    
+    
 
 }
