@@ -57,15 +57,8 @@ public class Jogo {
         System.out.println(ranking);
     return "Jogador "+player.getNome()+" fez "+point+" pontos";
     }
+
     
-    public String finalizarJogo(){
-        ranking.put(player.getNome(), point);
-        System.out.println(ranking);
-    return "Jogador "+player.getNome()+" fez "+point+" pontos";
-    }
-    
-    
-   
     
     public List<Jogador>listaJogador(){
     return jogadores;
